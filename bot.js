@@ -92,10 +92,10 @@ async function getG2a(aSearch, aChannel, authorID) {
        * 
        */
       if (data.docs[i].name.includes("GLOBAL") || data.docs[i].name.includes("UNITED STATES") || data.docs[i].name.includes("NORTH AMERICA")) {
-        // console.log("name = " + data.docs[i].name);
-        // console.log("id = " + data.docs[i].id);
-        // console.log("catalog id = " + data.docs[i].catalogId);
-        // console.log("end URL = " + data.docs[i].slug);
+         console.log("name = " + data.docs[i].name);
+         console.log("id = " + data.docs[i].id);
+         console.log("catalog id = " + data.docs[i].catalogId);
+         console.log("end URL = " + data.docs[i].slug);
 
         postG2a(data.docs[i].slug, aChannel, searchLink, authorID);
           found = true;
